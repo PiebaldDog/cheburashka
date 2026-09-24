@@ -5,10 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Онлайн-школа «Чебурашка» — подтянем оценки за 30 дней</title>
   <meta name="description" content="Онлайн-школа «Чебурашка»: подтянем школьные оценки за 30 дней без нервов и зубрежки. 20 минут в день вместо двух часов мучений. Гарантия возврата денег." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
-  <noscript><link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" /></noscript>
+  <meta name="theme-color" content="#ff7a1a" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <!-- Превью при отправке ссылки в мессенджеры и соцсети -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="ru_RU" />
+  <meta property="og:site_name" content="Онлайн-школа «Чебурашка»" />
+  <meta property="og:title" content="Онлайн-школа «Чебурашка» — подтянем оценки за 30 дней" />
+  <meta property="og:description" content="20 минут в день вместо двух часов мучений. Группы до 5 человек, куратор 8:00–22:00, гарантия возврата денег." />
+  <meta property="og:url" content="https://piebalddog.github.io/cheburashka/" />
+  <meta property="og:image" content="https://piebalddog.github.io/cheburashka/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Онлайн-школа «Чебурашка» — подтянем оценки за 30 дней" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Онлайн-школа «Чебурашка» — подтянем оценки за 30 дней" />
+  <meta name="twitter:description" content="20 минут в день вместо двух часов мучений. Группы до 5 человек, куратор 8:00–22:00, гарантия возврата денег." />
+  <meta name="twitter:image" content="https://piebalddog.github.io/cheburashka/og-image.png" />
+  <!-- Fonts are hosted locally (fonts/) - zero external requests -->
   <style>
 /* ============================================================
    ВСТРОЕННЫЕ СТИЛИ (источник: css/styles.css)
@@ -17,6 +32,228 @@
    блокирует и не ломает отрисовку страницы.
    Если правите CSS — пересоберите index.html или правьте оба файла.
    ============================================================ */
+
+/* ============================================================
+   Local self-hosted fonts: no Google Fonts requests,
+   files live next to the site in the fonts/ folder.
+   ============================================================ */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('fonts/manrope-400-cyrillic-ext.woff2') format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('fonts/manrope-400-cyrillic.woff2') format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('fonts/manrope-400-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('fonts/manrope-500-cyrillic-ext.woff2') format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('fonts/manrope-500-cyrillic.woff2') format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('fonts/manrope-500-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('fonts/manrope-600-cyrillic-ext.woff2') format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('fonts/manrope-600-cyrillic.woff2') format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('fonts/manrope-600-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('fonts/manrope-700-cyrillic-ext.woff2') format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('fonts/manrope-700-cyrillic.woff2') format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('fonts/manrope-700-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url('fonts/manrope-800-cyrillic-ext.woff2') format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url('fonts/manrope-800-cyrillic.woff2') format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url('fonts/manrope-800-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('fonts/unbounded-500-cyrillic-ext.woff2') format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+@font-face {
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('fonts/unbounded-500-cyrillic.woff2') format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('fonts/unbounded-500-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('fonts/unbounded-600-cyrillic-ext.woff2') format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+@font-face {
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('fonts/unbounded-600-cyrillic.woff2') format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('fonts/unbounded-600-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('fonts/unbounded-700-cyrillic-ext.woff2') format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+@font-face {
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('fonts/unbounded-700-cyrillic.woff2') format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('fonts/unbounded-700-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url('fonts/unbounded-800-cyrillic-ext.woff2') format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+@font-face {
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url('fonts/unbounded-800-cyrillic.woff2') format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url('fonts/unbounded-800-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 /* ============================================================
    Онлайн-школа «Чебурашка» — лендинг
    Стиль: светлый фон + оранжевый градиент, стеклянные карточки,
@@ -157,9 +394,9 @@ section { scroll-margin-top: calc(var(--header-h) + 16px); }
 .logo-text b { font-family: var(--font-display); font-weight: 700; font-size: 17px; letter-spacing: .2px; }
 .logo-text em { font-style: normal; font-size: 12px; color: var(--muted); font-weight: 600; }
 
-.site-nav { display: flex; gap: 30px; }
+.site-nav { display: flex; gap: 24px; }
 .site-nav a {
-  font-weight: 700; font-size: 15px; color: var(--muted);
+  font-weight: 700; font-size: 14.5px; color: var(--muted);
   position: relative; padding: 6px 0;
   transition: color .25s ease;
 }
@@ -621,73 +858,8 @@ section { scroll-margin-top: calc(var(--header-h) + 16px); }
 }
 .modal-sub { color: var(--muted); font-size: 15px; font-weight: 600; margin-bottom: 26px; }
 
-#leadForm { text-align: left; }
-.field { margin-bottom: 16px; }
-.field label {
-  display: block; margin-bottom: 7px;
-  font-size: 13.5px; font-weight: 800; color: var(--ink); letter-spacing: .2px;
-}
-.field input {
-  width: 100%; padding: 14px 16px;
-  font: 600 15px/1.4 var(--font-body); color: var(--ink);
-  background: rgba(255, 255, 255, .92);
-  border: 1.5px solid rgba(214, 123, 40, .28);
-  border-radius: 14px;
-  transition: border-color .25s ease, box-shadow .25s ease;
-}
-.field input::placeholder { color: var(--soft); font-weight: 500; }
-.field input:focus {
-  outline: none;
-  border-color: var(--orange);
-  box-shadow: 0 0 0 4px rgba(255, 122, 26, .18);
-}
-.field input.invalid { border-color: #d33; box-shadow: 0 0 0 4px rgba(221, 51, 51, .14); }
-
-.consent {
-  display: flex; align-items: flex-start; gap: 10px;
-  margin: 4px 0 18px;
-  font-size: 13px; font-weight: 600; color: var(--muted); line-height: 1.45;
-  cursor: pointer;
-}
-.consent input {
-  width: 18px; height: 18px; flex: 0 0 18px; margin-top: 2px;
-  accent-color: var(--orange); cursor: pointer;
-}
-.consent a { color: var(--orange-deep); text-decoration: underline; }
-
-.form-error {
-  margin: -4px 0 14px; padding: 11px 14px;
-  border-radius: 12px;
-  background: rgba(221, 51, 51, .10);
-  border: 1px solid rgba(221, 51, 51, .35);
-  color: #b3261e; font-size: 13.5px; font-weight: 700;
-}
-
-.form-submit { width: 100%; padding: 17px 24px; font-size: 17px; }
-.form-submit:disabled { opacity: .75; cursor: wait; }
-.submit-wait { display: inline-flex; align-items: center; gap: 10px; }
-.spinner {
-  width: 18px; height: 18px; border-radius: 50%;
-  border: 2.5px solid rgba(255,255,255,.45); border-top-color: #fff;
-  animation: spin .7s linear infinite;
-}
-@keyframes spin { to { transform: rotate(360deg); } }
-
 .modal-note { margin-top: 14px; text-align: center; font-size: 12px; color: var(--soft); font-weight: 600; }
 .modal-note a { color: var(--orange-deep); text-decoration: underline; }
-
-.hp-field { position: absolute !important; left: -9999px !important; opacity: 0 !important; height: 1px; width: 1px; }
-
-.modal-success .success-icon {
-  display: inline-grid; place-items: center;
-  width: 64px; height: 64px; margin-bottom: 18px;
-  border-radius: 50%; color: #fff; background: var(--green);
-  box-shadow: 0 16px 34px -14px rgba(31,160,90,.8);
-}
-.modal-success .success-icon svg { width: 30px; height: 30px; }
-.modal-success h3 { color: var(--green); }
-.modal-success p { color: var(--muted); font-weight: 600; font-size: 15px; margin-bottom: 26px; }
-.modal-success .btn { width: 100%; }
 
 body.modal-open { overflow: hidden; }
 
@@ -701,6 +873,18 @@ body.modal-open { overflow: hidden; }
 .footer-inner { display: flex; flex-direction: column; gap: 14px; align-items: flex-start; }
 .footer-tag { color: var(--muted); font-weight: 600; font-size: 14.5px; }
 .footer-copy { color: var(--soft); font-size: 13px; font-weight: 600; }
+.footer-disclaimer {
+  width: 100%;
+  margin-top: 6px;
+  padding: 14px 16px;
+  border-radius: 12px;
+  background: rgba(255, 122, 26, .07);
+  border: 1px solid rgba(255, 160, 80, .35);
+  font-size: 12.5px;
+  line-height: 1.6;
+  color: var(--soft);
+  font-weight: 600;
+}
 
 /* ---------- Scroll-reveal анимации ---------- */
 .js .reveal {
@@ -790,7 +974,142 @@ body.modal-open { overflow: hidden; }
   .btn, .card { transition: none !important; }
   .dash { transform: none !important; }
 }
-</style>
+
+/* ============================================================
+   Новые секции: преподаватели, отзывы, FAQ, контакты,
+   липкая кнопка на мобильных
+   ============================================================ */
+
+/* ---------- Преподаватели ---------- */
+.teachers-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 26px; }
+.teacher-card {
+  text-align: center; padding: 30px 26px 26px;
+  border-radius: var(--radius);
+  background: var(--glass); border: 1px solid var(--line);
+  box-shadow: var(--shadow-sm);
+  width: min(320px, 100%);
+  transition: transform .35s cubic-bezier(.22,.8,.36,1), box-shadow .35s ease;
+}
+.teacher-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-card); }
+.teacher-photo {
+  width: 104px; height: 104px; margin: 0 auto 16px;
+  border-radius: 50%; overflow: hidden;
+  border: 3px solid rgba(255,255,255,.95);
+  background: var(--bg);
+  box-shadow: 0 14px 30px -12px rgba(255,100,10,.55);
+}
+.teacher-photo img { width: 100%; height: 100%; object-fit: cover; }
+.teacher-card h3 { font-family: var(--font-display); font-weight: 700; font-size: 17px; letter-spacing: .2px; }
+.teacher-subject {
+  display: block; margin: 5px 0 11px;
+  font-weight: 800; font-size: 12px; text-transform: uppercase; letter-spacing: 1.1px;
+  color: var(--orange-deep);
+}
+.teacher-card p { font-size: 13.5px; color: var(--muted); font-weight: 600; line-height: 1.6; }
+
+/* ---------- Отзывы ---------- */
+.reviews-grid { grid-template-columns: repeat(3, 1fr); }
+.card-review { display: flex; flex-direction: column; gap: 16px; }
+.review-stars { display: flex; gap: 3px; color: var(--orange); }
+.review-stars svg { width: 17px; height: 17px; }
+.review-text { font-size: 15px; color: #4a3220; font-weight: 500; line-height: 1.65; }
+.review-author { display: flex; align-items: center; gap: 12px; margin-top: auto; padding-top: 8px; }
+.review-photo {
+  width: 46px; height: 46px; flex: 0 0 46px; border-radius: 50%;
+  display: grid; place-items: center;
+  font-family: var(--font-display); font-weight: 800; font-size: 15px; color: #fff;
+  background: var(--grad);
+  box-shadow: 0 8px 18px -8px rgba(255,90,0,.7);
+}
+.review-author b { display: block; font-size: 15px; font-weight: 800; color: var(--ink); line-height: 1.3; }
+.review-author span { font-size: 12.5px; color: var(--muted); font-weight: 600; }
+
+/* ---------- FAQ ---------- */
+.faq-wrap { max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; gap: 14px; }
+.faq-item {
+  border-radius: var(--radius-sm);
+  background: var(--glass); border: 1px solid var(--line);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  transition: box-shadow .3s ease, transform .3s ease;
+}
+.faq-item:hover { transform: translateY(-2px); box-shadow: var(--shadow-card); }
+.faq-item summary {
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  padding: 19px 22px;
+  font-weight: 800; font-size: 16px; color: var(--ink);
+  cursor: pointer; list-style: none; user-select: none;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after {
+  content: "+"; flex: 0 0 30px; width: 30px; height: 30px;
+  display: grid; place-items: center;
+  border-radius: 10px;
+  background: var(--grad); color: #fff;
+  font-weight: 800; font-size: 19px; line-height: 1;
+  transition: transform .3s ease;
+}
+.faq-item[open] summary::after { transform: rotate(45deg); }
+.faq-a { padding: 0 22px 20px; }
+.faq-a p { font-size: 14.5px; color: var(--muted); font-weight: 600; line-height: 1.65; }
+.faq-note { text-align: center; margin-top: 28px; font-size: 15px; color: var(--muted); font-weight: 600; }
+.faq-note a { color: var(--orange-deep); font-weight: 800; text-decoration: underline; }
+
+/* ---------- Контакты в футере ---------- */
+.footer-top { display: flex; flex-direction: column; gap: 14px; align-items: flex-start; }
+.footer-contacts { display: flex; flex-wrap: wrap; gap: 12px 24px; margin-top: 4px; }
+.footer-contacts a {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-weight: 700; font-size: 14px; color: var(--muted);
+  transition: color .25s ease, transform .25s ease;
+}
+.footer-contacts a:hover { color: var(--orange-deep); transform: translateY(-1px); }
+.footer-contacts svg { width: 17px; height: 17px; flex: 0 0 auto; color: var(--orange); }
+.footer-bottom {
+  display: flex; justify-content: space-between; align-items: center; gap: 14px; flex-wrap: wrap;
+  width: 100%; margin-top: 8px; padding-top: 16px;
+  border-top: 1px dashed rgba(255, 160, 80, .45);
+}
+.footer-privacy { font-weight: 700; font-size: 13px; color: var(--soft); text-decoration: underline; text-underline-offset: 3px; transition: color .25s ease; }
+.footer-privacy:hover { color: var(--orange-deep); }
+
+/* ---------- Липкая CTA на мобильных ---------- */
+.sticky-cta {
+  position: fixed; left: 16px; right: 16px; bottom: 14px; z-index: 120;
+  display: none; padding: 17px 22px; font-size: 16px;
+  box-shadow: 0 20px 46px -14px rgba(255, 90, 0, .85);
+}
+body.modal-open .sticky-cta { display: none; }
+@media (max-width: 700px) {
+  .sticky-cta { display: inline-flex; }
+  body { padding-bottom: 88px; }
+}
+
+/* ---------- Новые секции: адаптив ---------- */
+@media (max-width: 1024px) {
+  .reviews-grid { grid-template-columns: 1fr; max-width: 620px; margin-inline: auto; }
+}
+
+/* ---------- Яндекс.Формы (iframe внутри модалки) ---------- */
+.yf-wrap {
+  position: relative;
+  width: 100%;
+  height: 560px;
+  overflow: hidden;
+  border-radius: 16px;
+  background: #fff;
+}
+.yf-frame {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+@media (max-width: 560px) {
+  .yf-wrap {
+    height: 640px;
+  }
+}</style>
   <script>
     document.documentElement.classList.add('js');
     /* Страховка: если main.js не загрузился, показываем контент без анимаций */
@@ -827,6 +1146,8 @@ body.modal-open { overflow: hidden; }
       <nav class="site-nav" id="siteNav">
         <a href="#problems">Проблемы</a>
         <a href="#solution">Как мы решаем</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#faq">Вопросы</a>
         <a href="#price">Тариф</a>
         <a class="nav-cta-mobile" href="#price">Забрать за 2 990 ₽</a>
       </nav>
@@ -1097,18 +1418,175 @@ body.modal-open { overflow: hidden; }
       </div>
     </section>
 
+    <!-- ПРЕПОДАВАТЕЛИ -->
+    <section class="section teachers" id="teachers">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">Кто ведёт занятия</span>
+          <h2>Преподаватели, которым дети доверяют</h2>
+        </div>
+        <div class="teachers-grid">
+          <article class="teacher-card reveal" style="--d:.05s">
+            <div class="teacher-photo"><img src="teacher_woman.jpeg" alt="Анна Ковалёва — преподаватель математики" loading="lazy" /></div>
+            <h3>Анна Ковалёва</h3>
+            <span class="teacher-subject">Математика · 1–6 классы</span>
+            <p>Разбирает «страшные» задачи на маленькие шаги и хвалит за каждый успех. Дети перестают бояться доски и контрольных.</p>
+          </article>
+          <article class="teacher-card reveal" style="--d:.15s">
+            <div class="teacher-photo"><img src="teacher_man.webp" alt="Марат Ибрагимов — преподаватель физики" loading="lazy" /></div>
+            <h3>Марат Ибрагимов</h3>
+            <span class="teacher-subject">Физика · 7–9 классы</span>
+            <p>Объясняет физику на примерах из жизни — от качелей до велосипеда. Умеет сделать сложное очевидным.</p>
+          </article>
+          <article class="teacher-card reveal" style="--d:.25s">
+            <div class="teacher-photo"><img src="teacher_russian_woman.jpg" alt="Елена Соколова — преподаватель русского языка" loading="lazy" /></div>
+            <h3>Елена Соколова</h3>
+            <span class="teacher-subject">Русский язык · 2–9 классы</span>
+            <p>Учит писать сочинения без стресса, а правила запоминать играючи. Минус ошибки — плюс любовь к чтению.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ОТЗЫВЫ -->
+    <section class="section reviews" id="reviews">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">Отзывы родителей</span>
+          <h2>Что говорят те, кто уже занимается у нас</h2>
+        </div>
+        <div class="cards reviews-grid">
+          <article class="card glass card-review reveal" style="--d:.05s">
+            <div class="review-stars" aria-label="Оценка 5 из 5">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 3 2.7 5.6 6.3.9-4.5 4.4 1 6.1-5.5-2.9-5.5 2.9 1-6.1L3 9.5l6.3-.9z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 3 2.7 5.6 6.3.9-4.5 4.4 1 6.1-5.5-2.9-5.5 2.9 1-6.1L3 9.5l6.3-.9z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 3 2.7 5.6 6.3.9-4.5 4.4 1 6.1-5.5-2.9-5.5 2.9 1-6.1L3 9.5l6.3-.9z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 3 2.7 5.6 6.3.9-4.5 4.4 1 6.1-5.5-2.9-5.5 2.9 1-6.1L3 9.5l6.3-.9z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 3 2.7 5.6 6.3.9-4.5 4.4 1 6.1-5.5-2.9-5.5 2.9 1-6.1L3 9.5l6.3-.9z"/></svg>
+            </div>
+            <p class="review-text">«До „Чебурашки“ сидели над математикой до 11 вечера. Через месяц сын сам садится за уроки в 19:00 и управляется за 20&nbsp;минут. Средняя оценка выросла с 3.4 до 4.6.»</p>
+            <div class="review-author">
+              <span class="review-photo">АК</span>
+              <div>
+                <b>Анна К.</b>
+                <span>мама второклассника · Казань</span>
+              </div>
+            </div>
+          </article>
+          <article class="card glass card-review reveal" style="--d:.15s">
+            <div class="review-stars" aria-label="Оценка 5 из 5">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 3 2.7 5.6 6.3.9-4.5 4.4 1 6.1-5.5-2.9-5.5 2.9 1-6.1L3 9.5l6.3-.9z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 3 2.7 5.6 6.3.9-4.5 4.4 1 6.1-5.5-2.9-5.5 2.9 1-6.1L3 9.5l6.3-.9z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 3 2.7 5.6 6.3.9-4.5 4.4 1 6.1-5.5-2.9-5.5 2.9 1-6.1L3 9.5l6.3-.9z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 3 2.7 5.6 6.3.9-4.5 4.4 1 6.1-5.5-2.9-5.5 2.9 1-6.1L3 9.5l6.3-.9z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 3 2.7 5.6 6.3.9-4.5 4.4 1 6.1-5.5-2.9-5.5 2.9 1-6.1L3 9.5l6.3-.9z"/></svg>
+            </div>
+            <p class="review-text">«Дочь боялась контрольных и говорила, что она „тупая“. Через шесть недель она первая поднимает руку у доски, а средний балл по физике вырос на 1.7. Это не школа, а какое-то волшебство.»</p>
+            <div class="review-author">
+              <span class="review-photo">ДВ</span>
+              <div>
+                <b>Дмитрий В.</b>
+                <span>папа восьмиклассницы · Москва</span>
+              </div>
+            </div>
+          </article>
+          <article class="card glass card-review reveal" style="--d:.25s">
+            <div class="review-stars" aria-label="Оценка 5 из 5">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 3 2.7 5.6 6.3.9-4.5 4.4 1 6.1-5.5-2.9-5.5 2.9 1-6.1L3 9.5l6.3-.9z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 3 2.7 5.6 6.3.9-4.5 4.4 1 6.1-5.5-2.9-5.5 2.9 1-6.1L3 9.5l6.3-.9z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 3 2.7 5.6 6.3.9-4.5 4.4 1 6.1-5.5-2.9-5.5 2.9 1-6.1L3 9.5l6.3-.9z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 3 2.7 5.6 6.3.9-4.5 4.4 1 6.1-5.5-2.9-5.5 2.9 1-6.1L3 9.5l6.3-.9z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 3 2.7 5.6 6.3.9-4.5 4.4 1 6.1-5.5-2.9-5.5 2.9 1-6.1L3 9.5l6.3-.9z"/></svg>
+            </div>
+            <p class="review-text">«Репетитор обходился в 1&nbsp;200&nbsp;₽ за час, а толку&nbsp;— ноль. Здесь за первый месяц видно прогресс в цифрах: оценки, время на уроки, разбор ошибок. И дочка снова любит учиться.»</p>
+            <div class="review-author">
+              <span class="review-photo">МЛ</span>
+              <div>
+                <b>Марина Л.</b>
+                <span>мама пятиклассницы · Новосибирск</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section faq" id="faq">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">Вопросы и ответы</span>
+          <h2>Отвечаем на вопросы до покупки</h2>
+        </div>
+        <div class="faq-wrap">
+          <details class="faq-item glass reveal" style="--d:.05s" open>
+            <summary>Как проходят занятия?</summary>
+            <div class="faq-a"><p>Живые онлайн-уроки в группах до 5 человек плюс интерактивные тренажёры для закрепления. Урок длится 45 минут, домашние задания проверяет личный куратор с 8:00 до 22:00 — с подробной обратной связью по каждому шагу.</p></div>
+          </details>
+          <details class="faq-item glass reveal" style="--d:.10s">
+            <summary>Ребёнок не захочет заниматься — и что тогда?</summary>
+            <div class="faq-a"><p>Начинаем с микро-шагов по 15 минут, чтобы не было страха «я не справлюсь». Куратор хвалит за маленькие победы и показывает прогресс в цифрах. А если ребёнок так и не войдёт в ритм за 30 дней — вернём деньги: это прописано в гарантии.</p></div>
+          </details>
+          <details class="faq-item glass reveal" style="--d:.15s">
+            <summary>Сколько времени нужно уделять учёбе каждый день?</summary>
+            <div class="faq-a"><p>Достаточно 20–25 минут в день. Короткие порции усваиваются лучше, чем двухчасовая зубрёжка: меньше усталости, больше результата. Остальное время — на хобби и полноценный сон.</p></div>
+          </details>
+          <details class="faq-item glass reveal" style="--d:.20s">
+            <summary>А если результат не появится за месяц?</summary>
+            <div class="faq-a"><p>Вернём 100% стоимости первого месяца без лишних вопросов — если средняя оценка не выросла минимум на 1 балл. Условия зафиксированы в договоре ещё до оплаты.</p></div>
+          </details>
+          <details class="faq-item glass reveal" style="--d:.25s">
+            <summary>Когда начнётся обучение после оплаты?</summary>
+            <div class="faq-a"><p>Почти сразу. Доступ к личному кабинету и расписанию откроется в течение 15 минут после оплаты, а на почту придёт письмо с деталями. Куратор напишет и ответит на все вопросы.</p></div>
+          </details>
+          <details class="faq-item glass reveal" style="--d:.30s">
+            <summary>На какие классы и предметы рассчитана школа?</summary>
+            <div class="faq-a"><p>Математика для 1–6 классов, физика для 7–9 и русский язык для 2–9. Подберём программу по короткому вступительному тесту, а на первом занятии преподаватель познакомится с ребёнком и выстроит план.</p></div>
+          </details>
+        </div>
+        <p class="faq-note reveal">Остались вопросы? Напишите нам на <a href="mailto:hello@cheburashka.school">hello@cheburashka.school</a> — ответим в течение 15 минут.</p>
+      </div>
+    </section>
+
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <a class="logo" href="#top">
-        <span class="logo-mark">Ч</span>
-        <span class="logo-text"><b>Чебурашка</b><em>онлайн-школа</em></span>
-      </a>
-      <p class="footer-tag">Подтягиваем школьные оценки за 30 дней — без нервов и зубрёжки.</p>
-      <p class="footer-copy">© 2026 Онлайн-школа «Чебурашка». Все права защищены.</p>
+      <div class="footer-top">
+        <a class="logo" href="#top">
+          <span class="logo-mark">Ч</span>
+          <span class="logo-text"><b>Чебурашка</b><em>онлайн-школа</em></span>
+        </a>
+        <p class="footer-tag">Подтягиваем школьные оценки за 30 дней — без нервов и зубрёжки.</p>
+        <div class="footer-contacts">
+          <a href="mailto:hello@cheburashka.school">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            hello@cheburashka.school
+          </a>
+          <a href="tel:+79000000000">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.9z"/></svg>
+            +7 (900) 000-00-00
+          </a>
+          <a href="#">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.785 16.241s.288-.032.436-.194c.136-.148.132-.427.132-.427s-.02-1.304.576-1.496c.588-.19 1.341 1.26 2.14 1.818.605.422 1.064.33 1.064.33l2.137-.03s1.117-.071.587-.964c-.043-.073-.308-.661-1.588-1.87-1.34-1.264-1.16-1.059.453-3.246.983-1.332 1.376-2.145 1.253-2.493-.117-.332-.84-.244-.84-.244l-2.406.015s-.178-.025-.31.056c-.13.079-.213.262-.213.262s-.382 1.03-.89 1.907c-1.07 1.85-1.499 1.948-1.674 1.832-.407-.267-.305-1.075-.305-1.649 0-1.793.267-2.54-.52-2.733-.262-.065-.454-.107-1.123-.114-.858-.009-1.585.003-1.996.208-.274.136-.485.44-.356.457.159.022.519.099.71.363.246.341.237 1.107.237 1.107s.142 2.11-.33 2.371c-.325.18-.77-.187-1.725-1.865-.489-.859-.859-1.81-.859-1.81s-.07-.176-.198-.272c-.154-.115-.37-.151-.37-.151l-2.286.015s-.343.01-.469.161c-.112.135-.009.413-.009.413s1.79 4.258 3.817 6.403c1.858 1.967 3.968 1.838 3.968 1.838z"/></svg>
+            ВКонтакте
+          </a>
+          <a href="#">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.5 8.5 0 0 1-8.5 8.5 8.4 8.4 0 0 1-3.9-.96L3 21l1.84-5.1A8.5 8.5 0 1 1 21 11.5z"/><circle cx="8.8" cy="11.5" r="1.5" fill="currentColor" stroke="none"/><circle cx="12" cy="11.5" r="1.5" fill="currentColor" stroke="none"/><circle cx="15.2" cy="11.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+            Макс
+          </a>
+        </div>
+      </div>
+      <p class="footer-disclaimer">Сайт является учебным проектом. Все данные на сайте — преподаватели, отзывы, статистика, реквизиты и контакты — вымышленные и не связаны с реальными лицами и организациями. Оферта на сайте не заключается.</p>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2026 Онлайн-школа «Чебурашка». Все права защищены.</p>
+        <a class="footer-privacy" href="#privacy">Политика обработки персональных данных</a>
+      </div>
     </div>
   </footer>
+
+  <!-- Липкая кнопка для мобильных -->
+  <a class="sticky-cta btn btn-primary" href="#price" data-open-modal>Забрать за 2 990 ₽</a>
 
   <!-- Модальное окно: форма записи на курс -->
   <div class="modal" id="leadModal" aria-hidden="true">
@@ -1118,54 +1596,19 @@ body.modal-open { overflow: hidden; }
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>
       </button>
 
-      <!-- Состояние: форма -->
+      <!-- Состояние: форма (Яндекс.Формы в iframe) -->
       <div class="modal-body" id="modalFormView">
         <span class="modal-mark">Ч</span>
         <h3 id="leadModalTitle">Бронируем месяц за 2 990 ₽</h3>
         <p class="modal-sub">Оставьте контакты — пришлём доступ к урокам и расписание в течение 15&nbsp;минут.</p>
 
-        <form id="leadForm" novalidate>
-          <div class="field">
-            <label for="f-name">Имя</label>
-            <input id="f-name" name="name" type="text" autocomplete="given-name" required placeholder="Как вас зовут?" />
-          </div>
-          <div class="field">
-            <label for="f-surname">Фамилия</label>
-            <input id="f-surname" name="surname" type="text" autocomplete="family-name" required placeholder="Ваша фамилия" />
-          </div>
-          <div class="field">
-            <label for="f-email">Email</label>
-            <input id="f-email" name="email" type="email" autocomplete="email" required placeholder="you@example.com" />
-          </div>
+        <div class="yf-wrap">
+          <!-- Адрес Яндекс.Формы вписывается в data-src, см. инструкцию в js/main.js -->
+          <iframe id="yandexFormFrame" class="yf-frame" title="Форма записи на курс"
+            data-src="https://forms.yandex.ru/u/6ab2755002848fe435642e48" allow="clipboard-write" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
 
-          <!-- Защита от спама: поле невидимо для людей -->
-          <input class="hp-field" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" />
-
-          <label class="consent">
-            <input type="checkbox" name="consent" id="f-consent" required />
-            <span>Соглашаюсь на обработку персональных данных</span>
-          </label>
-
-          <p class="form-error" id="formError" hidden></p>
-
-          <button class="btn btn-primary btn-xl form-submit" type="submit" id="leadSubmit">
-            <span class="submit-label">Забрать месяц за 2 990 ₽</span>
-            <span class="submit-wait" hidden>
-              <span class="spinner" aria-hidden="true"></span>Отправляем…
-            </span>
-          </button>
-          <p class="modal-note">Нажимая кнопку, вы соглашаетесь с <a href="#privacy" target="_blank" rel="noopener">политикой конфиденциальности</a>.</p>
-        </form>
-      </div>
-
-      <!-- Состояние: успех -->
-      <div class="modal-body modal-success" id="modalSuccessView" hidden>
-        <span class="success-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
-        </span>
-        <h3>Заявка принята!</h3>
-        <p id="successText">Мы уже получили ваши контакты и скоро напишем на указанный email.</p>
-        <button class="btn btn-primary btn-xl" type="button" data-modal-close>Отлично</button>
+        <p class="modal-note">Отправляя форму, вы соглашаетесь с <a href="#privacy">политикой конфиденциальности</a>.</p>
       </div>
     </div>
   </div>
@@ -1174,7 +1617,7 @@ body.modal-open { overflow: hidden; }
 /* ============================================================
    Онлайн-школа «Чебурашка» — интерактив
    reveal-анимации, parallax-блобы, 3D-tilt, таймер, меню, шапка
-   и форма записи, которая отправляет данные только в Google Таблицу
+   и форма записи через Яндекс.Формы (хранение в РФ, без Google Таблицы)
    ============================================================ */
 (function () {
   "use strict";
@@ -1319,103 +1762,41 @@ body.modal-open { overflow: hidden; }
     });
   }
 
-  /* ---------- 7. Форма записи → Google Таблица ---------- */
-  var SHEET_WEBHOOK_URL =
-    "https://script.google.com/macros/s/AKfycby0fi9eD8VYJ4wbJPus8hEAg85V2lqfX3vFeNFrvx1eELGvXdunbpPTYsKyfGdmvUsY/exec";
-
+/* ---------- 7. Форма записи → Яндекс.Формы ---------- */
+  /* Данные формы попадают в ваш аккаунт Яндекса (РФ) — без иностранных
+     сервисов и без Google Таблицы. Яндекс.Форма подключена как iframe.
+     Чтобы подключить свою форму:
+       1. Создайте форму на forms.yandex.ru (поля: Имя, Фамилия, Email,
+          согласие на обработку персональных данных).
+       2. Нажмите «Поделиться» → «Встроить» и скопируйте адрес iframe.
+       3. Вставьте этот адрес в атрибут data-src у iframe #yandexFormFrame
+          в index.html — больше ничего менять не нужно. */
   var modal = document.getElementById("leadModal");
-  var modalFormView = document.getElementById("modalFormView");
-  var modalSuccessView = document.getElementById("modalSuccessView");
-  var successText = document.getElementById("successText");
-  var form = document.getElementById("leadForm");
-  var submitBtn = document.getElementById("leadSubmit");
-  var submitLabel = submitBtn ? submitBtn.querySelector(".submit-label") : null;
-  var submitWait = submitBtn ? submitBtn.querySelector(".submit-wait") : null;
-  var formError = document.getElementById("formError");
-  var lastOpener = null;
+  if (modal) {
+    var frame = document.getElementById("yandexFormFrame");
+    var frameInited = false;
+    var lastOpener = null;
 
-  var emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
-
-  function openLeadModal(opener) {
-    if (!modal) return;
-    lastOpener = opener || null;
-    modalFormView.hidden = false;
-    modalSuccessView.hidden = true;
-    form.reset();
-    clearFieldErrors();
-    modal.classList.add("open");
-    modal.setAttribute("aria-hidden", "false");
-    document.body.classList.add("modal-open");
-    var first = document.getElementById("f-name");
-    if (first) setTimeout(function () { first.focus(); }, 60);
-  }
-
-  function closeLeadModal() {
-    if (!modal) return;
-    modal.classList.remove("open");
-    modal.setAttribute("aria-hidden", "true");
-    document.body.classList.remove("modal-open");
-    if (lastOpener && lastOpener.focus) lastOpener.focus();
-  }
-
-  function setLoading(on) {
-    if (!submitBtn) return;
-    submitBtn.disabled = on;
-    submitLabel.hidden = on;
-    submitWait.hidden = !on;
-  }
-
-  function showFormError(msg) {
-    formError.textContent = msg;
-    formError.hidden = false;
-  }
-
-  function clearFieldErrors() {
-    form.querySelectorAll(".invalid").forEach(function (el) { el.classList.remove("invalid"); });
-    formError.hidden = true;
-  }
-
-  function markInvalid(input) {
-    input.classList.add("invalid");
-    input.focus();
-  }
-
-  /* Отправка заявки в Google Таблицу (через URL Apps Script-развёртывания) */
-  function sendToSheet(data) {
-    var payload = JSON.stringify({
-      name: data.name,
-      surname: data.surname,
-      email: data.email,
-      date: new Date().toISOString(),
-      page: window.location.href
-    });
-    /* Apps Script не требует CORS-preflight при Content-Type: text/plain */
-    return fetch(SHEET_WEBHOOK_URL, {
-      method: "POST",
-      headers: { "Content-Type": "text/plain" },
-      body: payload
-    }).then(function (r) {
-      return r.text().then(function (t) {
-        return { ok: r.ok, status: r.status, body: t };
-      }, function () {
-        return { ok: r.ok, status: r.status, body: "" };
-      });
-    }, function (err) {
-      return { ok: false, status: 0, body: String((err && err.message) || err) };
-    });
-  }
-
-  function showSuccess(data) {
-    modalFormView.hidden = true;
-    modalSuccessView.hidden = false;
-    if (successText) {
-      successText.textContent =
-        "Заявка на имя " + data.name + " принята. Доступ к урокам и все детали отправим на " + data.email + " в течение 15 минут.";
+    function openLeadModal(opener) {
+      lastOpener = opener || null;
+      /* Ленивая загрузка: src подставляется только при первом открытии окна */
+      if (frame && !frameInited) {
+        frameInited = true;
+        var src = frame.getAttribute("data-src");
+        if (src) frame.src = src;
+      }
+      modal.classList.add("open");
+      modal.setAttribute("aria-hidden", "false");
+      document.body.classList.add("modal-open");
     }
-  }
 
-  if (modal && form) {
-    /* Открытие по кнопкам */
+    function closeLeadModal() {
+      modal.classList.remove("open");
+      modal.setAttribute("aria-hidden", "true");
+      document.body.classList.remove("modal-open");
+      if (lastOpener && lastOpener.focus) lastOpener.focus();
+    }
+
     document.querySelectorAll("[data-open-modal]").forEach(function (el) {
       el.addEventListener("click", function (e) {
         e.preventDefault();
@@ -1423,69 +1804,11 @@ body.modal-open { overflow: hidden; }
       });
     });
 
-    /* Закрытие: крестик, подложка, кнопка «Отлично», Escape */
     modal.querySelectorAll("[data-modal-close]").forEach(function (el) {
       el.addEventListener("click", closeLeadModal);
     });
     document.addEventListener("keydown", function (e) {
       if (e.key === "Escape" && modal.classList.contains("open")) closeLeadModal();
-    });
-
-    /* Отправка формы */
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
-      clearFieldErrors();
-
-      var nameInput = document.getElementById("f-name");
-      var surnameInput = document.getElementById("f-surname");
-      var emailInput = document.getElementById("f-email");
-      var consentInput = document.getElementById("f-consent");
-      var hp = form.querySelector('input[name="website"]');
-
-      /* Анти-спам: если бот заполнил скрытое поле — «принимаем» молча */
-      if (hp && hp.value) return;
-
-      var name = nameInput.value.trim();
-      var surname = surnameInput.value.trim();
-      var email = emailInput.value.trim();
-
-      if (!name) { showFormError("Пожалуйста, укажите имя."); markInvalid(nameInput); return; }
-      if (!surname) { showFormError("Пожалуйста, укажите фамилию."); markInvalid(surnameInput); return; }
-      if (!email) { showFormError("Пожалуйста, укажите email."); markInvalid(emailInput); return; }
-      if (!emailRe.test(email)) { showFormError("Похоже, в email опечатка. Проверьте адрес."); markInvalid(emailInput); return; }
-      if (!consentInput.checked) { showFormError("Подтвердите согласие на обработку персональных данных."); consentInput.focus(); return; }
-
-      if (!SHEET_WEBHOOK_URL) {
-        showFormError("Отправка заявок пока не настроена: впишите URL таблицы в js/main.js.");
-        return;
-      }
-
-      setLoading(true);
-
-      var data = { name: name, surname: surname, email: email };
-      console.log("Отправка заявки в Google Таблицу:", data);
-
-      sendToSheet(data).then(function (res) {
-        setLoading(false);
-        if (res.ok) {
-          console.log("Заявка успешно отправлена, ответ таблицы:", res.body);
-          showSuccess(data);
-          return;
-        }
-
-        var detail = "";
-        if (res.status === 0) {
-          detail = " Браузер отклонил запрос — скорее всего, у развёртывания Apps Script доступ «только я». Измените его на «Все, у кого есть ссылка».";
-          console.error("Запрос отклонён браузером:", res.body);
-        } else {
-          try {
-            var j = JSON.parse(res.body);
-            detail = j && j.error ? " Ответ таблицы: " + j.error : "";
-          } catch (e2) { /* тело не JSON */ }
-          console.error("Ошибка отправки в таблицу:", res.status, res.body);
-        }
-        showFormError("Не удалось отправить заявку." + detail + " Попробуйте ещё раз.");
-      });
     });
   }
 })();
