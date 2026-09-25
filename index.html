@@ -332,7 +332,7 @@ section { scroll-margin-top: calc(var(--header-h) + 16px); }
   content: "";
   position: absolute; inset: 0;
   border-radius: 50%;
-  filter: blur(70px);
+  filter: blur(42px);
   animation: drift 16s ease-in-out infinite;
 }
 .blob-1 { width: 480px; height: 480px; top: -140px; right: -120px; }
@@ -452,14 +452,14 @@ section { scroll-margin-top: calc(var(--header-h) + 16px); }
 /* ---------- Глассморфизм ---------- */
 .glass {
   background: var(--glass);
-  backdrop-filter: blur(18px) saturate(1.5);
-  -webkit-backdrop-filter: blur(18px) saturate(1.5);
+  backdrop-filter: blur(10px) saturate(1.3);
+  -webkit-backdrop-filter: blur(10px) saturate(1.3);
   border: 1px solid var(--line);
   box-shadow: var(--shadow-card);
 }
 
 /* ---------- Секции ---------- */
-.section { padding: 104px 0; position: relative; }
+.section { padding: 104px 0; position: relative; content-visibility: auto; contain-intrinsic-size: auto 900px; }
 
 .section-head { max-width: 780px; margin: 0 auto 56px; text-align: center; }
 .kicker {
@@ -996,17 +996,27 @@ body.modal-open { overflow: hidden; }
 .modal-card .confetti {
   position: absolute; top: -14px; z-index: 6; pointer-events: none;
   border-radius: 3px;
-  animation: confetti-fall 1.5s cubic-bezier(.3,.6,.4,1) forwards;
+  opacity: 0;
+  animation: confetti-fall 2.6s cubic-bezier(.3,.6,.4,1) forwards;
 }
 @keyframes confetti-fall {
-  0%   { top: -14px; opacity: 1; transform: rotate(0deg); }
-  100% { top: 108%; opacity: .9; transform: rotate(520deg); }
+  0%   { top: -14px; opacity: 0; transform: rotate(0deg) translateX(0); }
+  12%  { opacity: .9; }
+  50%  { opacity: .9; }
+  100% { top: 106%; opacity: .85; transform: rotate(640deg) translateX(var(--cx, 0)); }
+}
+
+/* ---------- Лёгкая загрузка: тяжёлые фоновые анимации — после загрузки ---------- */
+html:not(.is-loaded) .blob::after,
+html:not(.is-loaded) .hero-bubbles i { animation-play-state: paused; }
+@media (max-width: 760px) {
+  .glass { backdrop-filter: blur(6px) saturate(1.2); -webkit-backdrop-filter: blur(6px) saturate(1.2); }
 }
 
 /* ---------- Доступность ---------- */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .blob, .float-pill, .eyebrow::before, .live-dot::before, .hero-bubbles i, .modal-card .confetti { animation: none !important; }
+  .blob, .float-pill, .eyebrow::before, .live-dot::before, .hero-bubbles i { animation: none !important; }
   .js .reveal { opacity: 1 !important; transform: none !important; transition: none !important; }
   .js .bar-track i { width: var(--w) !important; }
   .btn, .card { transition: none !important; }
@@ -1671,6 +1681,12 @@ body.modal-open .sticky-cta { display: none; }
 
   var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
+  /* ---------- 0. Тяжёлые фоновые анимации стартуют после полной загрузки ---------- */
+  function enableBgAnim() {
+    document.documentElement.classList.add("is-loaded");
+  }
+  if (document.readyState === "complete") { enableBgAnim(); } else { window.addEventListener("load", enableBgAnim); }
+
   /* ---------- 1. Scroll-reveal ---------- */
   var revealEls = document.querySelectorAll(".reveal");
   if ("IntersectionObserver" in window) {
@@ -1865,20 +1881,21 @@ body.modal-open .sticky-cta { display: none; }
 
     function burstConfetti() {
       var card = modal.querySelector(".modal-card");
-      if (!card || reduceMotion) return;
+      if (!card) return;
       var colors = ["#ff7a1a", "#ffb03a", "#ff4d00", "#1fa05a", "#ffb066", "#fff7ef"];
-      var count = 56;
+      var count = 36;
       for (var c = 0; c < count; c++) {
         var p = document.createElement("i");
         p.className = "confetti";
-        p.style.left = (4 + Math.random() * 92).toFixed(1) + "%";
-        p.style.width = (6 + Math.random() * 5).toFixed(1) + "px";
-        p.style.height = (9 + Math.random() * 6).toFixed(1) + "px";
+        p.style.left = (3 + Math.random() * 94).toFixed(1) + "%";
+        p.style.width = (5 + Math.random() * 3).toFixed(1) + "px";
+        p.style.height = (7 + Math.random() * 4).toFixed(1) + "px";
         p.style.background = colors[(Math.random() * colors.length) | 0];
-        p.style.animationDelay = (Math.random() * 0.3).toFixed(2) + "s";
+        p.style.setProperty("--cx", ((-22 + Math.random() * 44)).toFixed(0) + "px");
+        p.style.animationDelay = (Math.random() * 0.6).toFixed(2) + "s";
         card.appendChild(p);
         (function (el) {
-          setTimeout(function () { if (el.parentNode) { el.parentNode.removeChild(el); } }, 2600);
+          setTimeout(function () { if (el.parentNode) { el.parentNode.removeChild(el); } }, 3400);
         })(p);
       }
     }
